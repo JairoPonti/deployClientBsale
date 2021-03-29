@@ -55,6 +55,7 @@ useEffect(() => {
     return prodFiltrados;
   }
  
+  
   console.log(siguientesYanteriores(productos));
    console.log(productos)
 
