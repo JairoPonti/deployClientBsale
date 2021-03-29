@@ -33,6 +33,7 @@ const Paginas = () => {
   }
 }
 
+
 useEffect(() => {
   showSiguientes()
    //eslint-disable-next-line
@@ -40,7 +41,7 @@ useEffect(() => {
 
 
   var leyendaTuBusqueda = (
-    <h3 style={{ textAlign: "center", marginTop: "28px", color:"grey" }}>
+    <h3 style={{ textAlign: "center", marginTop: "28px", color:"GrayText" }}>
       Tu búsqueda aparecerá aquí
     </h3>
   );
@@ -56,9 +57,8 @@ useEffect(() => {
     return prodFiltrados;
   }
  
-
   console.log(siguientesYanteriores(productos));
-  
+   console.log(productos)
 
   const handleSiguientes = () => {
     dispatch(incrementoContador())
@@ -77,7 +77,6 @@ useEffect(() => {
   };
 
   // console.log(lengthSliceSiguientes)
-
 
   return (
     <div >
