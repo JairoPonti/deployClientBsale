@@ -86,3 +86,9 @@ nav{
   height: auto;
 }
 
+.fondo{
+  background:  url("./assets/shopping.jpg");
+    width: auto;
+    height: auto;
+
+  }

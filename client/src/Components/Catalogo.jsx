@@ -91,11 +91,9 @@ const Catalogo = () => {
   };
 
   return (
-    <div>
-      <div className="row">
-        <h5 style={{ display: "flex", justifyContent: "center" }}>
-          Ordená los productos
-        </h5>
+    <div >
+      <div className="row" >
+       
         <br />
         <div
           style={{
@@ -110,7 +108,7 @@ const Catalogo = () => {
             className="btn darkcyan button"
             onClick={handleMenorPrecio}
           >
-            <i className="material-icons">attach_money</i>Menor a Mayor
+           Menor <i className="material-icons">attach_money</i>
           </button>
           <button
             type="submit"
@@ -138,7 +136,7 @@ const Catalogo = () => {
             className="btn darkcyan button"
             onClick={handleMayorPrecio}
           >
-            <i className="material-icons ">attach_money</i>Mayor a Menor
+            Mayor <i className="material-icons ">attach_money</i>
           </button>
         </div>
         <div

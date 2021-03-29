@@ -6,6 +6,7 @@ import {Provider} from 'react-redux'
 import generateStore from './redux/store'
 import Buscador from '../src/Components/Buscador'
 import Footer from './Components/Footer.jsx';
+import './index.css'
 
 
 class App extends Component {
@@ -16,13 +17,16 @@ class App extends Component {
     const store = generateStore()
 
     return (
+      <div className='fondo'>
       <Provider store= {store}>
       <Router>
-      <Route exact path="/" component={Buscador} />
+        <Buscador/>
+      {/* <Route exact path="/" component={Buscador} /> */}
       <Route path="/" render={() => <Catalogo state={this.state} />} />
       <Route exact path="/" component={Footer} />
       </Router>
       </Provider>
+      </div>
     );
   }
 }

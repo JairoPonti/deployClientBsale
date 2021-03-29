@@ -99,7 +99,7 @@ export default function searchReducer(state = dataInicial, action) {
 //::::: OBTENER PRODUCTOS CONECTADO A BACK
 export const obtenerProductos = (valor) => async (dispatch, getState) => {
   try {
-    const res = await axios.get(`http://localhost:4000/search?q=${valor}`);
+    const res = await axios.get(`/search?q=${valor}`);
     dispatch({
       type: OBTENER_PRODUCTOS,
       payload: res.data[0],
@@ -122,7 +122,7 @@ export const categorySearch = (val) => async (dispatch, getState) => {
   
   try {
     const res = await axios.get(
-      `http://localhost:4000/search/category?q=${val}`
+      `/search/category?q=${val}`
     );
     console.log(res.data[0]);
     dispatch({
