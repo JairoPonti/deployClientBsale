@@ -57,7 +57,7 @@ useEffect(() => {
   }
  
   console.log(siguientesYanteriores(productos));
-   console.log(productos)
+   
 
   const handleSiguientes = () => {
     dispatch(incrementoContador())
