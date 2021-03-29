@@ -4,7 +4,7 @@ import axios from "axios";
 const dataInicial = {
   array: [],
   resFiltrados: [],
-  max: 9,
+  max: 6,
   min: 0,
   value: [],
   interruptor: true,
@@ -167,8 +167,8 @@ export const siguientesProductos = () => async (dispatch, getState) => {
   dispatch({
     type: SIGUIENTES_PRODUCTOS,
     payload: {
-      max: max + 9,
-      min: min + 9,
+      max: max + 6,
+      min: min + 6,
     },
   });
 };
@@ -180,8 +180,8 @@ export const anterioresProductos = () => async (dispatch, getState) => {
   dispatch({
     type: ANTERIORES_PRODUCTOS,
     payload: {
-      max: max - 9,
-      min: min - 9,
+      max: max - 6,
+      min: min - 6,
     },
   });
 };
@@ -195,7 +195,7 @@ export const resetIndices = () => async (dispatch) => {
   dispatch({
     type: RESET_INDICES,
     payload: {
-      max: 9,
+      max: 6,
       min: 0
     },
   });

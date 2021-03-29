@@ -57,26 +57,17 @@ useEffect(() => {
     return prodFiltrados;
   }
  
-  console.log(siguientesYanteriores(productos));
-   console.log(productos)
-
   const handleSiguientes = () => {
     dispatch(incrementoContador())
     dispatch(siguientesProductos());
     siguientesYanteriores(productos);
-    console.log("Ejecuté siguientes");
   };
-  console.log (arrSig)
-  console.log (contador)
+ 
   const handleAnteriores = () => {
     dispatch(decrementoContador())
-    // dispatch(sliceSiguientes())
     dispatch(anterioresProductos());
     siguientesYanteriores(productos);
-    console.log("Ejecuté Anteriores");
   };
-
-  // console.log(lengthSliceSiguientes)
 
   return (
     <div >
