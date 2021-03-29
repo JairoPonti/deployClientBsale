@@ -18,7 +18,7 @@ const Paginas = () => {
   var contador = useSelector((store) => store.productos.contador);
   var interruptor = useSelector((store) => store.productos.interruptor);
 
-  var prodFiltrados = productos.slice(0, 7);
+  var prodFiltrados = productos.slice(0, 6);
   var resto = productos.length % 6
   var division = Math.trunc( productos.length / 6)
 
