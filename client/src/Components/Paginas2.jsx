@@ -35,6 +35,7 @@ const Paginas = () => {
 
 useEffect(() => {
   showSiguientes()
+   //eslint-disable-next-line
 }, [productos])
 
 
@@ -77,7 +78,7 @@ useEffect(() => {
 
   // console.log(lengthSliceSiguientes)
 
-  
+
   return (
     <div >
       <div className= "row" style={{padding: 20, paddingTop:50}}>
