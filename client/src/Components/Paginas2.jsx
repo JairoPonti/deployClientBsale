@@ -55,9 +55,9 @@ useEffect(() => {
     return prodFiltrados;
   }
  
-  
+
   console.log(siguientesYanteriores(productos));
-   console.log(productos)
+  
 
   const handleSiguientes = () => {
     dispatch(incrementoContador())
@@ -77,6 +77,7 @@ useEffect(() => {
 
   // console.log(lengthSliceSiguientes)
 
+  
   return (
     <div >
       <div className= "row" style={{padding: 20, paddingTop:50}}>
