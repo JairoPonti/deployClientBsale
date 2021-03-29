@@ -33,6 +33,7 @@ const Paginas = () => {
   }
 }
 
+
 useEffect(() => {
   showSiguientes()
 }, [productos])
