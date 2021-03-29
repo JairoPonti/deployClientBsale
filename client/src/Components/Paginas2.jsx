@@ -34,9 +34,9 @@ const Paginas = () => {
 }
 
 
-useEffect(() => {
-  showSiguientes()
-}, [productos])
+// useEffect(() => {
+//   showSiguientes()
+// }, [productos])
 
 
   var leyendaTuBusqueda = (
